@@ -1,4 +1,4 @@
-var app = {
+var App = {
   initialize: function () {
     this.bindEvents();
   },
@@ -11,4 +11,4 @@ var app = {
   }
 };
 
-app.initialize();
+App.initialize();
