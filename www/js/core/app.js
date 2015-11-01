@@ -7,7 +7,7 @@ var App = {
   },
   onDeviceReady: function () {
     MovieModel.setMovies();
-    MovieController.get();
+    MovieView.renderList();
   }
 };
 

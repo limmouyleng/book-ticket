@@ -13,7 +13,7 @@ var MovieModel = {
       "desription": "Fighting Movie"
     });
   },
-  getMovies: function(){
+  getMovies: function () {
     return MovieModel.movies;
   }
 };

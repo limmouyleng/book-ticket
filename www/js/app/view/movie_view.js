@@ -1,6 +1,8 @@
 var MovieView = {
-  renderList: function ($element, movie) {
-    $element.append("<li><a href='#page-movie-detail'><img src='"
-        + movie.img + "'>" + movie.name + " </a></li>");
+  renderList: function () {
+    var movies = MovieModel.getMovies();
+    var source = $("#template-page-movies").html();
+    var template = Handlebars.compile(source);
+    $("#page-movies").append(template({movies: movies}));
   }
 };
