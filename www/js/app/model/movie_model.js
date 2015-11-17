@@ -9,8 +9,8 @@ var MovieModel = {
       datatype: "JSON",
       url: ENDPOINT + "collections?auth_token=yqqUswK2sTaWWxXg38nM",
       crossDomain: true,
-      success: successCallback(),
-      error: errorCallback()
+      success: successCallback,
+      error: errorCallback
     });
   }
 };
