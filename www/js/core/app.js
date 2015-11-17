@@ -1,3 +1,5 @@
+var URL = "http://resourcemap-sea.instedd.org/";
+var ENDPOINT = "http://resourcemap-sea.instedd.org/api/";
 var App = {
   initialize: function () {
     this.bindEvents();
@@ -6,7 +8,7 @@ var App = {
     document.addEventListener('deviceready', this.onDeviceReady, false);
   },
   onDeviceReady: function () {
-    MovieModel.fetch();
+    MovieController.get();
   }
 };
 
