@@ -7,7 +7,7 @@ var MovieModel = {
     $.ajax({
       type: "GET",
       datatype: "JSON",
-      url: ENDPOINT + "collections?auth_token=yqqUswK2sTaWWxXg38nM",
+      url: ENDPOINT + "collections?auth_token=Ak6pBB2TsE42xdHXvxz8",
       crossDomain: true,
       success: successCallback,
       error: errorCallback
