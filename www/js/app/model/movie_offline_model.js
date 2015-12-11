@@ -1,11 +1,12 @@
 var MovieOfflineModel = {
   add: function (movie) {
-    movieParam = {
-      name: movie.name,
-      movie_id: movie.id,
-      description: movie.description
-    };
-    persistence.add(new Movie(movieParam));
+    
+      movieParam = {
+        name: movie.name,
+        movie_id: movie.id,
+        description: movie.description
+      };
+      persistence.add(new Movie(movieParam));
     persistence.flush();
   },
   update: function (oldMovies, newMovies) {
