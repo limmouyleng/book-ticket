@@ -1,3 +1,10 @@
+/* 
+- modify if (window && (window.openDatabase ) to if (window && (window.openDatabase || window.sqlitePlugin) {
+  on line 47
+- modify if 
+  var dbType = window.sqlitePlugin ? window.sqlitePlugin : window;
+  var conn = dbType.openDatabase(dbname, '1.0', description, size); line 72
+*/
 try {
   if(!window) {
     window = {};
